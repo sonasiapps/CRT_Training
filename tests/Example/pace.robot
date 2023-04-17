@@ -72,7 +72,7 @@ Check Promo Code
     ClickText         Sacha the Deer
     ClickText         Add to cart
     ClickText         Promo code?
-    ${RandomString} =     Generate Random String    length=5          chars=[LETTERS][NUMBERS]
+    ${RandomString} =     Generate Random String    length=5          chars=[NUMBERS]
     TypeText          Promo             ${RandomString}
     ClickText         Apply
     VerifyText        This promo code isn't valid
